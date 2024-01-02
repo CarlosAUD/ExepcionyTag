@@ -1,0 +1,11 @@
+public class ManejoExcepciones {
+    public static void main(String[] args) {
+        try {
+            int resultado = 10 / 0; // Intentando una operación no permitida
+        } catch (ArithmeticException e) {
+            System.out.println("¡Error aritmético capturado!");
+        } finally {
+            System.out.println("Este bloque siempre se ejecutará.");
+        }
+    }
+}
